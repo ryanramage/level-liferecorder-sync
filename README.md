@@ -7,11 +7,12 @@ Usage
 -----
 
 ```
-var test_files = os.tmpDir() + '/mediafolder',
+var LiferecorderSync = require('level-liferecorder-sync'),
+	test_files = os.tmpDir() + '/mediafolder',
 	db = levelup(os.tmpDir() + '/dbfolder', {
 		valueEncoding: 'json'
 	}),
-	sync = new require('level-liferecorder-sync')(db, test_files, false)
+	sync = new LiferecorderSync(db, test_files, false)
 		.on('attached', function(){
 			console.log('Attached');
 		})
