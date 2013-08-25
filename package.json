@@ -1,0 +1,28 @@
+{
+  "name": "level-liferecorder-sync",
+  "version": "0.0.3",
+  "description": "Monitor a folder to import media from a liferecorder to leveldb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/eckoit/level-liferecorder-sync",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eckoit/level-liferecorder-sync"
+  },
+  "author": "Ryan Ramage",
+  "license": "BSD",
+  "dependencies": {
+    "mkdirp": "~0.3",
+    "node-ffprobe": "~1.2.2",
+    "watch": "~0.7.0",
+    "moment": "~2.0.0",
+    "async": "~0.2.8",
+    "underscore": "~1.4.4",
+    "cp": "~0.1.1"
+  },
+  "devDependencies": {
+    "level": "~0.14.0"
+  }
+}
